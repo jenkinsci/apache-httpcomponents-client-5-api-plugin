@@ -1,1 +1,0 @@
-# apache-httpcomponents-client-5-api-plugin
