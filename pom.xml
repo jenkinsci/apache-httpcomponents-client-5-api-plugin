@@ -51,18 +51,6 @@
         <tag>${scmTag}</tag>
     </scm>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>io.jenkins.tools.bom</groupId>
-                <artifactId>bom-weekly</artifactId>
-                <version>1883.vcb_768a_7c3610</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.apache.httpcomponents.core5</groupId>
