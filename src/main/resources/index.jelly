@@ -20,5 +20,5 @@ SOFTWARE.
 
 <?jelly escape-by-default='true'?>
 <div>
-    Bundles <a href="https://hc.apache.org/httpcomponents-client-5.2.x/index.html" target="_blank">Apache HttpComponents Client 5.x</a> and allows it to be used by Jenkins plugins.
+    Bundles <a href="https://hc.apache.org/httpcomponents-client-5.2.x/index.html" target="_blank">Apache HttpComponents Client ${revision}</a> and allows it to be used by Jenkins plugins.
 </div>

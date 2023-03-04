@@ -6,7 +6,7 @@ It allows managing library updates independently of plugins.
 
 == How to introduce to your plugin
 
-=== Plugins directly depending on httpclient
+=== Plugins directly depending on httpclient5
 
 Replace the dependency to `org.apache.httpcomponents.client5:httpclient5` with the dependency to `apache-httpcomponents-client-5-api`.
 
@@ -38,7 +38,7 @@ Replace the dependency to `org.apache.httpcomponents.client5:httpclient5` with t
 </dependencies>
 ----
 
-=== Plugins using libraries depending on httpclient
+=== Plugins using libraries depending on httpclient5
 
 Add the dependency to `apache-httpcomponents-client-5-api` BEFORE any of dependencies to those libraries to force maven to use `httpclient5` declared by `apache-httpcomponents-client-5-api`.
 
