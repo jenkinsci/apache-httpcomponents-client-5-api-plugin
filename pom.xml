@@ -24,7 +24,7 @@
         <gitHubRepo>jenkinsci/apache-httpcomponents-client-5-api-plugin</gitHubRepo>
     </properties>
 
-    <name>Jenkins Apache HttpComponents Client 5.x API Plugin</name>
+    <name>Apache HttpComponents Client 5.x API Plugin</name>
     <description>Bundles Apache HttpComponents Client 5.x and allows it to be used by Jenkins plugins</description>
     <url>https://github.com/${gitHubRepo}</url>
 
