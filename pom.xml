@@ -11,12 +11,12 @@
 
     <groupId>io.jenkins.plugins</groupId>
     <artifactId>apache-httpcomponents-client-5-api</artifactId>
-    <version>${revision}-${changelist}</version>
+    <version>${revision}${changelist}</version>
     <packaging>hpi</packaging>
 
     <properties>
         <revision>5.2.1</revision>
-        <changelist>999999-SNAPSHOT</changelist>
+        <changelist>-999999-SNAPSHOT</changelist>
         <jenkins.version>2.361.4</jenkins.version>
         <httpcore.version>${revision}</httpcore.version>
         <httpclient.version>${revision}</httpclient.version>
@@ -24,8 +24,7 @@
     </properties>
 
     <name>Apache HttpComponents Client 5.x API Plugin</name>
-    <description>Bundles Apache HttpComponents Client ${revision} and allows it to be used by Jenkins plugins
-    </description>
+    <description>Bundles Apache HttpComponents Client ${revision} and allows it to be used by Jenkins plugins</description>
     <url>https://github.com/${gitHubRepo}</url>
 
     <licenses>
