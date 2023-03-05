@@ -1,6 +1,18 @@
+[[apache-httpcomponents-client-5-api-plugin]]
 = Apache HttpComponents Client 5.x API Plugin for Jenkins
+:toc: macro
+:toclevels: 3
+:toc-title:
 
-This plugin bundles all the components of https://hc.apache.org/httpcomponents-client-5.2.x/index.html[Apache HttpComponents Client 5.2.x] except `httpclient5-win` because of the dependency on jna.
+image:https://ci.jenkins.io/job/Plugins/job/apache-httpcomponents-client-5-api-plugin/job/main/badge/icon[link="https://ci.jenkins.io/job/Plugins/job/apache-httpcomponents-client-5-api-plugin/job/main/"]
+image:https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/actions/workflows/jenkins-security-scan.yml/badge.svg[link="https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/actions/workflows/jenkins-security-scan.yml"]
+
+image:https://img.shields.io/jenkins/plugin/i/apache-httpcomponents-client-5-api.svg?color=blue&label=installations[link="https://stats.jenkins.io/pluginversions/apache-httpcomponents-client-5-api.html"]
+image:https://img.shields.io/github/contributors/jenkinsci/apache-httpcomponents-client-5-api-plugin.svg?color=blue[link="https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/graphs/contributors"]
+image:https://img.shields.io/github/release/jenkinsci/apache-httpcomponents-client-5-api-plugin.svg?label=changelog[link="https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/releases/latest"]
+
+This plugin bundles all the components of https://hc.apache.org/httpcomponents-client-5.2.x/index.html[Apache HttpComponents Client 5.x] except `httpclient5-win` because of the dependency on jna.
+
 These components can be used by other plugins as a dependency.
 It allows managing library updates independently of plugins.
 
@@ -10,7 +22,7 @@ It allows managing library updates independently of plugins.
 
 Replace the dependency to `org.apache.httpcomponents.client5:httpclient5` with the dependency to `apache-httpcomponents-client-5-api`.
 
-* Before:
+*Before:*
 
 ----
 <dependencies>
@@ -24,7 +36,7 @@ Replace the dependency to `org.apache.httpcomponents.client5:httpclient5` with t
 </dependencies>
 ----
 
-* After:
+*After:*
 
 ----
 <dependencies>
@@ -40,9 +52,9 @@ Replace the dependency to `org.apache.httpcomponents.client5:httpclient5` with t
 
 === Plugins using libraries depending on httpclient5
 
-Add the dependency to `apache-httpcomponents-client-5-api` BEFORE any of dependencies to those libraries to force maven to use `httpclient5` declared by `apache-httpcomponents-client-5-api`.
+Add the dependency to `apache-httpcomponents-client-5-api` *before* any of dependencies to those libraries to force maven to use `httpclient5` declared by `apache-httpcomponents-client-5-api`.
 
-* Before:
+*Before:*
 
 ----
 <dependencies>
@@ -59,7 +71,7 @@ Add the dependency to `apache-httpcomponents-client-5-api` BEFORE any of depende
 </dependencies>
 ----
 
-* After:
+*After:*
 
 ----
 <dependencies>
@@ -80,6 +92,12 @@ Add the dependency to `apache-httpcomponents-client-5-api` BEFORE any of depende
   ...
 </dependencies>
 ----
+
+== Versioning
+
+Version follows the pattern of `<org.apache.httpcomponents version>-<plugin version>`.
+
+This way it is clear what upstream dependency is offered and allows patch releases for the plugin itself if required.
 
 == Release Notes
 
