@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automerge": true,
+  "extends": [
+    "config:base",
+    ":semanticCommitsDisabled"
+  ],
+  "reviewers": [
+    "team: apache-httpcomponents-client-5-api-plugin-developers"
+  ],
+  "labels": [
+    "dependencies"
+  ]
+}
