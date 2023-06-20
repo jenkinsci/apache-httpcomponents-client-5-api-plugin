@@ -19,7 +19,7 @@
         <changelist>-999999-SNAPSHOT</changelist>
         <jenkins.version>2.361.4</jenkins.version>
         <httpcore.version>${revision}</httpcore.version>
-        <httpclient.version>${revision}</httpclient.version>
+        <httpclient.version>5.2.1</httpclient.version>
         <gitHubRepo>jenkinsci/apache-httpcomponents-client-5-api-plugin</gitHubRepo>
     </properties>
 
