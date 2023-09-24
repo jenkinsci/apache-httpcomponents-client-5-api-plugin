@@ -88,11 +88,11 @@ Avoid version conflicts by using the https://github.com/jenkinsci/bom[Jenkins Pl
     <artifactId>apache-httpcomponents-client-5-api</artifactId>
   </dependency>
   <dependency>
-    <artifactId>somelibrary-using-httpclient</artifactId>
+    <artifactId>somelibrary-using-httpclient5</artifactId>
     <version>1.0.0</version>
   </dependency>
   <dependency>
-    <artifactId>anotherlibrary-using-httpclient</artifactId>
+    <artifactId>anotherlibrary-using-httpclient5</artifactId>
     <version>1.0.0</version>
   </dependency>
   ...
