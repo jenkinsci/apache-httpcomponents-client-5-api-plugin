@@ -26,8 +26,7 @@
     </properties>
 
     <name>Apache HttpComponents Client 5.x API Plugin</name>
-    <description>Bundles Apache HttpComponents Client ${revision} and allows it to be used by Jenkins plugins
-    </description>
+    <description>Bundles Apache HttpComponents Client ${revision} and allows it to be used by Jenkins plugins</description>
     <url>https://github.com/${gitHubRepo}</url>
 
     <licenses>
