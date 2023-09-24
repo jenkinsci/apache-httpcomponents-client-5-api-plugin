@@ -22,8 +22,11 @@ It allows managing library updates independently of plugins.
 
 Replace the dependency to `org.apache.httpcomponents.client5:httpclient5` with the dependency to `apache-httpcomponents-client-5-api`.
 
+Avoid version conflicts by using the https://github.com/jenkinsci/bom[Jenkins Plugin BOM] rather than depending on a specific version.
+
 *Before:*
 
+[source,xml]
 ----
 <dependencies>
   ...
@@ -38,13 +41,13 @@ Replace the dependency to `org.apache.httpcomponents.client5:httpclient5` with t
 
 *After:*
 
+[source,xml]
 ----
 <dependencies>
   ...
   <dependency>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>apache-httpcomponents-client-5-api</artifactId>
-    <version>5.2.1-1.0</version>
   </dependency>
   ...
 </dependencies>
@@ -54,8 +57,11 @@ Replace the dependency to `org.apache.httpcomponents.client5:httpclient5` with t
 
 Add the dependency to `apache-httpcomponents-client-5-api` *before* any of dependencies to those libraries to force maven to use `httpclient5` declared by `apache-httpcomponents-client-5-api`.
 
+Avoid version conflicts by using the https://github.com/jenkinsci/bom[Jenkins Plugin BOM] rather than depending on a specific version.
+
 *Before:*
 
+[source,xml]
 ----
 <dependencies>
   ...
@@ -73,13 +79,13 @@ Add the dependency to `apache-httpcomponents-client-5-api` *before* any of depen
 
 *After:*
 
+[source,xml]
 ----
 <dependencies>
   ...
   <dependency>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>apache-httpcomponents-client-5-api</artifactId>
-    <version>5.2.1-1.0</version>
   </dependency>
   <dependency>
     <artifactId>somelibrary-using-httpclient</artifactId>
@@ -95,9 +101,10 @@ Add the dependency to `apache-httpcomponents-client-5-api` *before* any of depen
 
 == Versioning
 
-Version follows the pattern of `<org.apache.httpcomponents version>-<plugin version>`.
-
+Version follows the pattern of `<org.apache.httpcomponents.client5 version>-<plugin version>`.
 This way it is clear what upstream dependency is offered and allows patch releases for the plugin itself if required.
+
+Since `org.apache.httpcomponents.client5` artifacts have a release cycle that is independent from `org.apache.httpcomponents.core5` artifacts, the latter part of patch releases for this plugin.
 
 == Release Notes
 
@@ -105,5 +112,5 @@ Release notes are recorded in https://github.com/jenkinsci/apache-httpcomponents
 
 == License
 
-* https://opensource.org/licenses/MIT[MIT License] - Plugin codebase
-* https://www.apache.org/licenses/LICENSE-2.0[Apache License 2.0] - Nested library
+* Plugin source and documentation - https://opensource.org/licenses/MIT[MIT License]
+* Nested library - https://www.apache.org/licenses/LICENSE-2.0[Apache License 2.0]

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -15,16 +16,19 @@
     <packaging>hpi</packaging>
 
     <properties>
-        <revision>5.2.3</revision>
+        <httpclient.version>5.2.1</httpclient.version>
+        <httpcore.version>5.2.3</httpcore.version>
+
+        <revision>${httpclient.version}</revision>
         <changelist>-999999-SNAPSHOT</changelist>
         <jenkins.version>2.361.4</jenkins.version>
-        <httpcore.version>${revision}</httpcore.version>
-        <httpclient.version>5.2.1</httpclient.version>
+
         <gitHubRepo>jenkinsci/apache-httpcomponents-client-5-api-plugin</gitHubRepo>
     </properties>
 
     <name>Apache HttpComponents Client 5.x API Plugin</name>
-    <description>Bundles Apache HttpComponents Client ${revision} and allows it to be used by Jenkins plugins</description>
+    <description>Bundles Apache HttpComponents Client ${revision} and allows it to be used by Jenkins plugins
+    </description>
     <url>https://github.com/${gitHubRepo}</url>
 
     <licenses>
