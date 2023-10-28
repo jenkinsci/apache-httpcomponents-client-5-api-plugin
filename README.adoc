@@ -104,7 +104,7 @@ Avoid version conflicts by using the https://github.com/jenkinsci/bom[Jenkins Pl
 Version follows the pattern of `<org.apache.httpcomponents.client5 version>-<plugin version>`.
 This way it is clear what upstream dependency is offered and allows patch releases for the plugin itself if required.
 
-Since `org.apache.httpcomponents.client5` artifacts have a release cycle that is independent from `org.apache.httpcomponents.core5` artifacts, the latter part of patch releases for this plugin.
+Since `org.apache.httpcomponents.client5` artifacts have a release cycle that is independent from `org.apache.httpcomponents.core5` artifacts, the latter are included as of patch releases for this plugin.
 
 == Release Notes
 
