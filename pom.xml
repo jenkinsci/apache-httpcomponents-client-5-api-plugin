@@ -15,7 +15,7 @@
     <packaging>hpi</packaging>
 
     <properties>
-        <httpclient.version>5.2.1</httpclient.version>
+        <httpclient.version>5.2.2</httpclient.version>
         <httpcore.version>5.2.3</httpcore.version>
 
         <revision>${httpclient.version}</revision>
