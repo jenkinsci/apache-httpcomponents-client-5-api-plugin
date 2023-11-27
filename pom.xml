@@ -16,7 +16,7 @@
 
     <properties>
         <httpclient.version>5.2.2</httpclient.version>
-        <httpcore.version>5.2.3</httpcore.version>
+        <httpcore.version>5.2.4</httpcore.version>
 
         <revision>${httpclient.version}</revision>
         <changelist>-999999-SNAPSHOT</changelist>
