@@ -18,7 +18,7 @@
         <httpclient.version>5.2.3</httpclient.version>
         <httpcore.version>5.2.4</httpcore.version>
 
-        <revision>5.2.3-999999</revision>
+        <revision>${httpclient.version}</revision>
         <changelist>-999999-SNAPSHOT</changelist>
         <jenkins.version>2.361.4</jenkins.version>
 
