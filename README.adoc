@@ -11,7 +11,7 @@ image:https://img.shields.io/jenkins/plugin/i/apache-httpcomponents-client-5-api
 image:https://img.shields.io/github/contributors/jenkinsci/apache-httpcomponents-client-5-api-plugin.svg?color=blue[link="https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/graphs/contributors"]
 image:https://img.shields.io/github/release/jenkinsci/apache-httpcomponents-client-5-api-plugin.svg?label=changelog[link="https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/releases/latest"]
 
-This plugin bundles all the components of https://hc.apache.org/httpcomponents-client-5.2.x/index.html[Apache HttpComponents Client 5.x] except `httpclient5-win` because of the dependency on jna.
+This plugin bundles all the components of https://hc.apache.org[Apache HttpComponents Client 5.x] except `httpclient5-win` because of the dependency on jna.
 
 These components can be used by other plugins as a dependency.
 It allows managing library updates independently of plugins.
