@@ -46,7 +46,7 @@ Avoid version conflicts by using the https://github.com/jenkinsci/bom[Jenkins Pl
 <dependencies>
   ...
   <dependency>
-    <groupId>org.jenkins-ci.plugins</groupId>
+    <groupId>io.jenkins.plugins</groupId>
     <artifactId>apache-httpcomponents-client-5-api</artifactId>
   </dependency>
   ...
@@ -84,7 +84,7 @@ Avoid version conflicts by using the https://github.com/jenkinsci/bom[Jenkins Pl
 <dependencies>
   ...
   <dependency>
-    <groupId>org.jenkins-ci.plugins</groupId>
+    <groupId>io.jenkins.plugins</groupId>
     <artifactId>apache-httpcomponents-client-5-api</artifactId>
   </dependency>
   <dependency>
