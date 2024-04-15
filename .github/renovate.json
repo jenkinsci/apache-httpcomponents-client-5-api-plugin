@@ -6,7 +6,7 @@
     ":semanticCommitsDisabled"
   ],
   "reviewers": [
-    "team: apache-httpcomponents-client-5-api-plugin-developers"
+    "team:apache-httpcomponents-client-5-api-plugin-developers"
   ],
   "labels": [
     "dependencies"
