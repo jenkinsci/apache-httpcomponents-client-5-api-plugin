@@ -1,2 +1,0 @@
-# Extends the default ReleaseDrafter config provided in https://github.com/jenkinsci/.github
-_extends: .github
