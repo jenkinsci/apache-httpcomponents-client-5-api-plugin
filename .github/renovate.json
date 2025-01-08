@@ -5,12 +5,6 @@
     "config:recommended",
     ":semanticCommitsDisabled"
   ],
-  "packageRules": [
-    {
-      "matchPackageNames": ["org.apache.httpcomponents.client5:http**"],
-      "allowedVersions": "<5.4"
-    }
-  ],
   "reviewers": [
     "team:apache-httpcomponents-client-5-api-plugin-developers"
   ],
