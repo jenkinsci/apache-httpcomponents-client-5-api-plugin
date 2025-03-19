@@ -44,7 +44,7 @@
   <properties>
     <gitHubRepo>jenkinsci/apache-httpcomponents-client-5-api-plugin</gitHubRepo>
     <httpclient.version>5.3.1</httpclient.version>
-    <httpcore.version>5.3.3</httpcore.version>
+    <httpcore.version>5.3.4</httpcore.version>
     <jenkins.version>2.361.4</jenkins.version>
     <!-- TODO: Revert to ${httpclient.version} once https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/issues/59 is fixed -->
     <!-- <revision>${httpclient.version{</revision> -->
