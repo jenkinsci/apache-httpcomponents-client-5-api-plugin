@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.88</version>
+    <version>5.9</version>
     <relativePath />
   </parent>
 
@@ -44,8 +44,10 @@
   <properties>
     <gitHubRepo>jenkinsci/apache-httpcomponents-client-5-api-plugin</gitHubRepo>
     <httpclient.version>5.4.1</httpclient.version>
-    <httpcore.version>5.3.1</httpcore.version>
-    <jenkins.version>2.361.4</jenkins.version>
+    <httpcore.version>5.3.4</httpcore.version>
+    <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
+    <jenkins.baseline>2.479</jenkins.baseline>
+    <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <revision>${httpclient.version}</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <spotless.check.skip>false</spotless.check.skip>
@@ -115,4 +117,13 @@
       <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
+
+  <build>
+    <resources>
+      <resource>
+        <filtering>true</filtering>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+  </build>
 </project>

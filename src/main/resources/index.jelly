@@ -1,6 +1,6 @@
 <!--
 The MIT License
-Copyright (c) 2024 strangelookingnerd
+Copyright (c) 2025 strangelookingnerd
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -20,5 +20,5 @@ SOFTWARE.
 
 <?jelly escape-by-default='true'?>
 <div>
-    Bundles <a href="https://hc.apache.org/httpcomponents-client-5.2.x/index.html" target="_blank">Apache HttpComponents Client ${revision}</a> and allows it to be used by Jenkins plugins.
+    Bundles <a href="https://hc.apache.org" target="_blank">Apache HttpComponents Client ${revision}</a> and allows it to be used by Jenkins plugins.
 </div>
