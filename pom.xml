@@ -43,14 +43,12 @@
 
   <properties>
     <gitHubRepo>jenkinsci/apache-httpcomponents-client-5-api-plugin</gitHubRepo>
-    <httpclient.version>5.3.1</httpclient.version>
+    <httpclient.version>5.4.1</httpclient.version>
     <httpcore.version>5.3.4</httpcore.version>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.479</jenkins.baseline>
     <jenkins.version>${jenkins.baseline}.3</jenkins.version>
-    <!-- TODO: Revert to ${httpclient.version} once https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/issues/59 is fixed -->
-    <!-- <revision>${httpclient.version}</revision> -->
-    <revision>5.4</revision>
+    <revision>${httpclient.version}</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
