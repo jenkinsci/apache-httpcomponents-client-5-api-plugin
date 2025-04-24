@@ -43,7 +43,7 @@
 
   <properties>
     <gitHubRepo>jenkinsci/apache-httpcomponents-client-5-api-plugin</gitHubRepo>
-    <httpclient.version>5.4.3</httpclient.version>
+    <httpclient.version>5.4.4</httpclient.version>
     <httpcore.version>5.3.4</httpcore.version>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.479</jenkins.baseline>
