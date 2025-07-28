@@ -46,7 +46,7 @@
     <httpclient.version>5.5</httpclient.version>
     <httpcore.version>5.3.4</httpcore.version>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
-    <jenkins.baseline>2.479</jenkins.baseline>
+    <jenkins.baseline>2.492</jenkins.baseline>
     <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <revision>${httpclient.version}</revision>
     <changelist>999999-SNAPSHOT</changelist>
