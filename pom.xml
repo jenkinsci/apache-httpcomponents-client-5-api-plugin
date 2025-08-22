@@ -52,6 +52,8 @@
     <changelist>999999-SNAPSHOT</changelist>
     <spotless.check.skip>false</spotless.check.skip>
     <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
+    <hpi.strictBundledArtifacts>true</hpi.strictBundledArtifacts>
+    <hpi.bundledArtifacts>httpclient5,httpclient5-cache,httpclient5-fluent,httpcore5,httpcore5-h2,httpcore5-reactive,reactive-streams</hpi.bundledArtifacts>
   </properties>
 
   <dependencies>
